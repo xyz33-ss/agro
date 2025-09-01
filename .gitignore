@@ -1,0 +1,137 @@
+# === SO / Generales ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+
+# === Editores / IDE ===
+.vscode/
+.idea/
+*.iml
+
+# === Variables de entorno y secretos ===
+# (Comparte un .env.example con las keys vacías)
+.env
+*.env
+*.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# === Logs y runtime ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pid/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+
+# Paquetes / build
+build/
+dist/
+.eggs/
+*.egg-info/
+.installed.cfg
+
+# Venvs
+.venv/
+venv/
+env/
+ENV/
+
+# Herramientas y cachés
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.dmypy.json
+.pydeps/
+
+# PyInstaller
+*.spec
+
+# Bases de datos locales (comunes en Django/Flask)
+*.sqlite3
+*.db
+*.db-journal
+instance/
+media/
+staticfiles/
+
+# === Node.js / Frontend ===
+node_modules/
+.npm/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.cache/
+.tmp/
+temp/
+tmp/
+
+# Salidas de build / frameworks comunes
+dist/
+build/
+out/
+.storybook-out/
+storybook-static/
+
+# Next / Nuxt / SvelteKit / Vite
+.next/
+out/
+.nuxt/
+.svelte-kit/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Cobertura (JS)
+coverage/
+.nyc_output/
+
+# Serverless / bundlers
+.serverless/
+.vercel/
+.netlify/
+
+# === Docker / Contenedores (si aplica) ===
+# (Usa .dockerignore también para imágenes)
+*.tar
+#docker-volume/
+#data/
+
+# === Imágenes y datasets pesados (opcional) ===
+#uploads/
+#datasets/
+#*.zip
+#*.7z
+#*.rar
+
+# === Sistemas de diseño / diseño gráfico (opcional) ===
+#*.psd
+#*.ai
+#*.sketch
+#*.fig
+
+*.webm
