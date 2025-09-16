@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precision Farming Map (FS-style)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="preconnect" href="https://server.arcgisonline.com">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="topbar">
+    <div class="brand">PRECISION FARMING</div>
+    <div class="score">Environmental Score: <span id="score">—</span></div>
+  </div>
+  <div id="sidebar">
+    <button class="tool" data-layer="ph" title="pH del suelo">pH</button>
+    <button class="tool" data-layer="nitrogen" title="Nitrógeno">N</button>
+    <button class="tool" data-layer="stones" title="Piedras">🪨</button>
+    <button class="tool" data-layer="weeds" title="Malezas">🌿</button>
+    <hr>
+    <button id="toggle-fields" class="tool" title="Ver predios/cuarteles">🗺️</button>
+    <button id="toggle-samples" class="tool" title="Muestras">🧪</button>
+    <hr>
+    <div class="legend" id="legend"></div>
+    <div class="lab">
+      <div class="lab-title">LABORATORIO</div>
+      <div id="lab-info">Click en el mapa para sondear. Pulsa “Guardar muestra”.</div>
+    </div>
+  </div>
+  <div id="map"></div>
+
+  <div id="probe" class="card hidden">
+    <div class="card-title">Sondeo del suelo</div>
+    <div id="probe-values"></div>
+    <button id="save-sample">Guardar muestra</button>
+    <button id="close-probe" class="ghost">Cerrar</button>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

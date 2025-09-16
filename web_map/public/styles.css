@@ -1,0 +1,44 @@
+:root{
+  --bg:#0c0c0e;
+  --panel:#141418;
+  --accent:#23c55e;
+  --muted:#8b8b92;
+  --stroke:#2a2a33;
+  --text:#e7e7ea;
+}
+*{box-sizing:border-box}
+html,body,#map{height:100%;margin:0}
+body{background:var(--bg);color:var(--text);font:14px/1.4 system-ui,Segoe UI,Roboto,Helvetica,Arial}
+#topbar{
+  position:fixed;top:0;left:0;right:0;height:46px;background:linear-gradient(#15151b,#0d0d12);
+  border-bottom:1px solid var(--stroke);display:flex;align-items:center;justify-content:space-between;padding:0 12px;z-index:800;
+}
+.brand{font-weight:700;letter-spacing:.5px}
+.score{color:#ddd}
+#sidebar{
+  position:fixed;top:52px;left:8px;width:220px;background:var(--panel);border:1px solid var(--stroke);
+  border-radius:12px;padding:10px;z-index:900;box-shadow:0 10px 30px #0008;
+}
+.tool{width:44px;height:44px;border-radius:10px;border:1px solid var(--stroke);background:#1b1b21;color:#fff;margin:4px;cursor:pointer}
+.tool.active{outline:2px solid var(--accent)}
+#legend{margin-top:8px;border-top:1px dashed var(--stroke);padding-top:8px;font-size:12px}
+.legend-row{display:flex;align-items:center;margin:2px 0}
+.legend-color{width:22px;height:12px;border-radius:3px;margin-right:6px;border:1px solid #0003}
+.lab{margin-top:10px;padding-top:8px;border-top:1px dashed var(--stroke);color:#ccc}
+.lab-title{font-weight:700;margin-bottom:4px}
+#map{position:fixed;inset:46px 0 0 0}
+.card{
+  position:fixed;bottom:20px;left:240px;background:var(--panel);border:1px solid var(--stroke);border-radius:12px;
+  padding:12px;min-width:260px;box-shadow:0 10px 30px #0008;z-index:920
+}
+.hidden{display:none}
+.card-title{font-weight:700;margin-bottom:6px}
+button{padding:8px 10px;border-radius:8px;border:1px solid var(--stroke);background:#24242b;color:#fff;cursor:pointer}
+button.ghost{background:transparent}
+.field-label{
+  background:#000a;color:#fff;border:1px solid #0006;border-radius:8px;padding:1px 6px;font-weight:700;
+}
+/* Map controls polishing */
+.leaflet-control-layers{background:var(--panel);border:1px solid var(--stroke);color:#fff}
+.leaflet-popup-content-wrapper{background:var(--panel);color:#fff}
+.leaflet-popup-tip{background:var(--panel)}
